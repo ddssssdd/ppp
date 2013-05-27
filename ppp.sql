@@ -19,7 +19,7 @@ CREATE TABLE `file_tag` (
   `file_id` int(11) DEFAULT NULL,
   `tag_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
 
 /*Data for the table `file_tag` */
 
@@ -81,6 +81,15 @@ insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (56,2,1040,1);
 insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (57,2,1033,4);
 insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (58,2,1041,0);
 insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (59,2,1036,0);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (60,2,1032,2);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (61,2,1033,1);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (62,2,0,4);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (63,2,0,3);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (64,2,0,5);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (65,2,1037,0);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (66,2,1030,0);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (67,2,1038,1039);
+insert  into `file_tag`(`id`,`user_id`,`file_id`,`tag_id`) values (68,2,1039,1038);
 
 /*Table structure for table `file_type` */
 
@@ -114,7 +123,7 @@ CREATE TABLE `project_type` (
   `name` varchar(50) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 /*Data for the table `project_type` */
 
@@ -194,7 +203,7 @@ CREATE TABLE `uploads` (
   `upload_date` datetime DEFAULT NULL,
   `thumbnail_url` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1057 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1062 DEFAULT CHARSET=utf8;
 
 /*Data for the table `uploads` */
 
@@ -251,6 +260,11 @@ insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`he
 insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`height`,`upload_date`,`thumbnail_url`) values (1054,'/files/2/3ac0745de05b8942ce0cd7451b35c018.mp3','Baby I\'m Sorry.mp3','audio/mp3',6141952,NULL,NULL,'2012-11-16 04:25:37',NULL);
 insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`height`,`upload_date`,`thumbnail_url`) values (1055,'/files/2/be6033833359e7b831a63abdfa40353c.mp4','Exam480Mod2Part1.mp4','video/mp4',146101363,NULL,NULL,'2012-11-16 08:22:55',NULL);
 insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`height`,`upload_date`,`thumbnail_url`) values (1056,'/files/2/3d60b019da2c73ea6823f21ce5f3bcbe.mp4','Exam480Mod1Part1_high.mp4','video/mp4',219327418,NULL,NULL,'2012-11-16 08:25:11',NULL);
+insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`height`,`upload_date`,`thumbnail_url`) values (1057,'/files/2/6f87bcecfb4da46f28178de6a620e7af.jpg','英文.jpg','image/jpeg',187540,821,664,'2012-11-30 08:13:37','/files/2/medium/6f87bcecfb4da46f28178de6a620e7af.jpg');
+insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`height`,`upload_date`,`thumbnail_url`) values (1058,'/files/2/02d0890c092e1d7142c4c1c74938640c.png','IMG_0189.PNG','image/png',550921,640,960,'2012-11-30 08:14:59','/files/2/medium/02d0890c092e1d7142c4c1c74938640c.png');
+insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`height`,`upload_date`,`thumbnail_url`) values (1059,'/files/2/d3b8ebb8dd9f0047d7bfc2e406db399d.jpg','IMG_0187.JPG','image/jpeg',1447792,2592,1936,'2012-11-30 08:15:00','/files/2/medium/d3b8ebb8dd9f0047d7bfc2e406db399d.jpg');
+insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`height`,`upload_date`,`thumbnail_url`) values (1060,'/files/2/63922cb4d0f55684c28cb84ab4368fcd.jpg','IMG_0186.JPG','image/jpeg',1696219,2592,1936,'2012-11-30 08:15:00','/files/2/medium/63922cb4d0f55684c28cb84ab4368fcd.jpg');
+insert  into `uploads`(`id`,`file_url`,`filename`,`file_type`,`size`,`width`,`height`,`upload_date`,`thumbnail_url`) values (1061,'/files/2/bb188abc3068265fd14e9a3e624eae9a.jpg','IMG_0188.JPG','image/jpeg',1253482,2592,1936,'2012-11-30 08:15:00','/files/2/medium/bb188abc3068265fd14e9a3e624eae9a.jpg');
 
 /*Table structure for table `user_tag` */
 
@@ -276,7 +290,7 @@ CREATE TABLE `user_upload` (
   `user_id` int(11) DEFAULT NULL,
   `file_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1046 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1051 DEFAULT CHARSET=utf8;
 
 /*Data for the table `user_upload` */
 
@@ -333,6 +347,11 @@ insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1042,2,1053);
 insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1043,2,1054);
 insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1044,2,1055);
 insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1045,2,1056);
+insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1046,2,1057);
+insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1047,2,1058);
+insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1048,2,1059);
+insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1049,2,1060);
+insert  into `user_upload`(`id`,`user_id`,`file_id`) values (1050,2,1061);
 
 /*Table structure for table `users` */
 
