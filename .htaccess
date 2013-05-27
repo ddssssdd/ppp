@@ -1,0 +1,6 @@
+RewriteEngine on
+
+
+
+RewriteCond $1 !^(index\.php|css|js|ico|img|files|assets|jpeg|index\.html|robots\.txt|cors\/result\.html|cors\/postmessage\.html)
+RewriteRule ^(.*)$ index.php/$1 [L]
